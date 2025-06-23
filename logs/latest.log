@@ -1,0 +1,51 @@
+[20:58:20] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:58:21] [ServerMain/INFO]: No existing world data, creating new world
+[20:58:22] [ServerMain/INFO]: Loaded 1407 recipes
+[20:58:22] [ServerMain/INFO]: Loaded 1520 advancements
+[20:58:22] [Server thread/INFO]: Starting minecraft server version 1.21.6
+[20:58:22] [Server thread/INFO]: Loading properties
+[20:58:22] [Server thread/INFO]: Default game type: SURVIVAL
+[20:58:22] [Server thread/INFO]: Generating keypair
+[20:58:22] [Server console handler/ERROR]: Exception handling console input
+java.io.IOException: The handle is invalid
+	at java.base/java.io.FileInputStream.readBytes(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:294) ~[?:?]
+	at java.base/java.lang.System$In.read(System.java:1849) ~[?:?]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:328) ~[?:?]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:388) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400) ~[?:?]
+	at ari$1.run(SourceFile:102) [server-1.21.6.jar:?]
+[20:58:22] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:58:22] [Server thread/INFO]: Using default channel type
+[20:58:22] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:58:22] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:58:22] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:58:22] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:58:22] [Server thread/INFO]: Preparing level "world"
+[20:58:27] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:58:27] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[20:58:27] [Worker-Main-4/INFO]: Preparing spawn area: 2%
+[20:58:28] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[20:58:28] [Worker-Main-2/INFO]: Preparing spawn area: 18%
+[20:58:29] [Worker-Main-1/INFO]: Preparing spawn area: 18%
+[20:58:29] [Worker-Main-7/INFO]: Preparing spawn area: 51%
+[20:58:30] [Worker-Main-6/INFO]: Preparing spawn area: 51%
+[20:58:30] [Server thread/INFO]: Time elapsed: 3213 ms
+[20:58:30] [Server thread/INFO]: Done (7.324s)! For help, type "help"
+[20:59:30] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[21:02:10] [Server thread/INFO]: Stopping server
+[21:02:10] [Server thread/INFO]: Saving players
+[21:02:10] [Server thread/INFO]: Saving worlds
+[21:02:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:02:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21:02:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:02:10] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
