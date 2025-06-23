@@ -1,17 +1,8 @@
-# Use OpenJDK 17 base image (or 21+ if your server needs it)
-FROM eclipse-temurin:21-jdk
+FROM eclipse-temurin:21-jdk-jammy
 
-# Set working directory
-WORKDIR /app
-
-# Copy everything into the container
+WORKDIR /server
 COPY . .
 
-# Accept the EULA
-RUN echo "eula=true" > eula.txt
-
-# Expose default Minecraft server port
 EXPOSE 25565
 
-# Run the server
-CMD ["java", "-Xmx2G", "-Xms2G", "-jar", "server.jar", "nogui"]
+CMD ["java", "-Xmx768M", "-Xms384M", "-XX:+UseG1GC", "-XX:+UnlockExperimentalVMOptions", "-XX:G1NewSizePercent=20", "-XX:G1MaxNewSizePercent=60", "-XX:G1HeapRegionSize=16M", "-XX:G1ReservePercent=15", "-XX:InitiatingHeapOccupancyPercent=20", "-jar", "server.jar", "nogui"]
