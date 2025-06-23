@@ -14,4 +14,4 @@ RUN echo "eula=true" > eula.txt
 EXPOSE 25565
 
 # Run the server
-CMD ["java", "-Xmx1G", "-Xms1G", "-jar", "server.jar", "nogui"]
+CMD ["java", "-Xmx2G", "-Xms2G", "-jar", "server.jar", "nogui"]
